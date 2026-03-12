@@ -1,0 +1,409 @@
+===== 2026-03-12 20:50:05 =====
+ID: {0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+FriendlyName: Наушники (6- HOCO W35 Stereo)
+State: Active
+
+===== 2026-03-12 20:50:07 =====
+ID: {0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+FriendlyName: Наушники (6- HOCO W35 Stereo)
+State: Active
+
+===== 2026-03-12 20:52:50 =====
+ID: {0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+FriendlyName: Наушники (6- HOCO W35 Stereo)
+State: Active
+Properties:
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = Наушники
+  NAudio.CoreAudioApi.PropertyKey = HOCO W35 Stereo
+  NAudio.CoreAudioApi.PropertyKey = {1}.BTHENUM\{0000110B-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\8&260E7AF3&0&4B548D8827B1_C00000000
+  NAudio.CoreAudioApi.PropertyKey = microsoft_bluetooth_a2dp_src.inf:00a2c5fc7d8ad5f7:BthA2dpSrc:10.0.19041.1:BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}
+  NAudio.CoreAudioApi.PropertyKey = 02.05.2025 16:56:16
+  NAudio.CoreAudioApi.PropertyKey = 67877c8e-2730-544f-9179-f3151394d634
+  NAudio.CoreAudioApi.PropertyKey = {784F6CFB-1505-461F-8503-79E8095F36EA}
+  NAudio.CoreAudioApi.PropertyKey = BTHENUM
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 3
+  NAudio.CoreAudioApi.PropertyKey = {DFF21CE2-F70F-11D0-B917-00A0C9223196}
+  NAudio.CoreAudioApi.PropertyKey = %windir%\system32\mmres.dll,-3051
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = {00000000-0000-0000-0000-000000000000}
+  NAudio.CoreAudioApi.PropertyKey = 1
+  NAudio.CoreAudioApi.PropertyKey = BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 65536
+  NAudio.CoreAudioApi.PropertyKey = {2}.\\?\bthenum#{0000110b-0000-1000-8000-00805f9b34fb}_vid&000105d6_pid&000a#8&260e7af3&0&4b548d8827b1_c00000000#{6994ad04-93ef-11d0-a3cc-00a0c9223196}\src
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = 1610716736
+  NAudio.CoreAudioApi.PropertyKey = 1610708736
+  NAudio.CoreAudioApi.PropertyKey = 1610612768
+  NAudio.CoreAudioApi.PropertyKey = 1610613504
+  NAudio.CoreAudioApi.PropertyKey = 1610691328
+  NAudio.CoreAudioApi.PropertyKey = 1610617600
+  NAudio.CoreAudioApi.PropertyKey = 1610712736
+  NAudio.CoreAudioApi.PropertyKey = 1610716736
+  NAudio.CoreAudioApi.PropertyKey = 405830538916
+  NAudio.CoreAudioApi.PropertyKey = 1
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 0
+  NAudio.CoreAudioApi.PropertyKey = 0
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 5
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = {0.0.0.00000000}.{9ac95f39-6450-49ef-a299-f72a1585ee1e}
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = \\?\SWD#MMDEVAPI#{0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}#{e6327cad-dcec-4949-ae8a-991e976a79d2}
+  NAudio.CoreAudioApi.PropertyKey = SWD\MMDEVAPI\{0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+  NAudio.CoreAudioApi.PropertyKey = Наушники (6- HOCO W35 Stereo)
+  NAudio.CoreAudioApi.PropertyKey = 6- HOCO W35 Stereo
+  NAudio.CoreAudioApi.PropertyKey = {BD41E15F-AB0D-45ED-8AAB-0785490B4A41}
+
+
+===== 2026-03-12 20:53:05 =====
+ID: {0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+FriendlyName: Наушники (6- HOCO W35 Stereo)
+State: Active
+Properties:
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = Наушники
+  NAudio.CoreAudioApi.PropertyKey = HOCO W35 Stereo
+  NAudio.CoreAudioApi.PropertyKey = {1}.BTHENUM\{0000110B-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\8&260E7AF3&0&4B548D8827B1_C00000000
+  NAudio.CoreAudioApi.PropertyKey = microsoft_bluetooth_a2dp_src.inf:00a2c5fc7d8ad5f7:BthA2dpSrc:10.0.19041.1:BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}
+  NAudio.CoreAudioApi.PropertyKey = 02.05.2025 16:56:16
+  NAudio.CoreAudioApi.PropertyKey = 67877c8e-2730-544f-9179-f3151394d634
+  NAudio.CoreAudioApi.PropertyKey = {784F6CFB-1505-461F-8503-79E8095F36EA}
+  NAudio.CoreAudioApi.PropertyKey = BTHENUM
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 3
+  NAudio.CoreAudioApi.PropertyKey = {DFF21CE2-F70F-11D0-B917-00A0C9223196}
+  NAudio.CoreAudioApi.PropertyKey = %windir%\system32\mmres.dll,-3051
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = {00000000-0000-0000-0000-000000000000}
+  NAudio.CoreAudioApi.PropertyKey = 1
+  NAudio.CoreAudioApi.PropertyKey = BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 65536
+  NAudio.CoreAudioApi.PropertyKey = {2}.\\?\bthenum#{0000110b-0000-1000-8000-00805f9b34fb}_vid&000105d6_pid&000a#8&260e7af3&0&4b548d8827b1_c00000000#{6994ad04-93ef-11d0-a3cc-00a0c9223196}\src
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = 1610716736
+  NAudio.CoreAudioApi.PropertyKey = 1610708736
+  NAudio.CoreAudioApi.PropertyKey = 1610612768
+  NAudio.CoreAudioApi.PropertyKey = 1610613504
+  NAudio.CoreAudioApi.PropertyKey = 1610691328
+  NAudio.CoreAudioApi.PropertyKey = 1610617600
+  NAudio.CoreAudioApi.PropertyKey = 1610712736
+  NAudio.CoreAudioApi.PropertyKey = 1610716736
+  NAudio.CoreAudioApi.PropertyKey = 405830538916
+  NAudio.CoreAudioApi.PropertyKey = 1
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 0
+  NAudio.CoreAudioApi.PropertyKey = 0
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 5
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = {0.0.0.00000000}.{9ac95f39-6450-49ef-a299-f72a1585ee1e}
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = \\?\SWD#MMDEVAPI#{0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}#{e6327cad-dcec-4949-ae8a-991e976a79d2}
+  NAudio.CoreAudioApi.PropertyKey = SWD\MMDEVAPI\{0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+  NAudio.CoreAudioApi.PropertyKey = Наушники (6- HOCO W35 Stereo)
+  NAudio.CoreAudioApi.PropertyKey = 6- HOCO W35 Stereo
+  NAudio.CoreAudioApi.PropertyKey = {BD41E15F-AB0D-45ED-8AAB-0785490B4A41}
+
+
+===== 2026-03-12 20:53:08 =====
+ID: {0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+FriendlyName: Наушники (6- HOCO W35 Stereo)
+State: Active
+Properties:
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = Наушники
+  NAudio.CoreAudioApi.PropertyKey = HOCO W35 Stereo
+  NAudio.CoreAudioApi.PropertyKey = {1}.BTHENUM\{0000110B-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\8&260E7AF3&0&4B548D8827B1_C00000000
+  NAudio.CoreAudioApi.PropertyKey = microsoft_bluetooth_a2dp_src.inf:00a2c5fc7d8ad5f7:BthA2dpSrc:10.0.19041.1:BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}
+  NAudio.CoreAudioApi.PropertyKey = 02.05.2025 16:56:16
+  NAudio.CoreAudioApi.PropertyKey = 67877c8e-2730-544f-9179-f3151394d634
+  NAudio.CoreAudioApi.PropertyKey = {784F6CFB-1505-461F-8503-79E8095F36EA}
+  NAudio.CoreAudioApi.PropertyKey = BTHENUM
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 3
+  NAudio.CoreAudioApi.PropertyKey = {DFF21CE2-F70F-11D0-B917-00A0C9223196}
+  NAudio.CoreAudioApi.PropertyKey = %windir%\system32\mmres.dll,-3051
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = {00000000-0000-0000-0000-000000000000}
+  NAudio.CoreAudioApi.PropertyKey = 1
+  NAudio.CoreAudioApi.PropertyKey = BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 65536
+  NAudio.CoreAudioApi.PropertyKey = {2}.\\?\bthenum#{0000110b-0000-1000-8000-00805f9b34fb}_vid&000105d6_pid&000a#8&260e7af3&0&4b548d8827b1_c00000000#{6994ad04-93ef-11d0-a3cc-00a0c9223196}\src
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = 1610716736
+  NAudio.CoreAudioApi.PropertyKey = 1610708736
+  NAudio.CoreAudioApi.PropertyKey = 1610612768
+  NAudio.CoreAudioApi.PropertyKey = 1610613504
+  NAudio.CoreAudioApi.PropertyKey = 1610691328
+  NAudio.CoreAudioApi.PropertyKey = 1610617600
+  NAudio.CoreAudioApi.PropertyKey = 1610712736
+  NAudio.CoreAudioApi.PropertyKey = 1610716736
+  NAudio.CoreAudioApi.PropertyKey = 405830538916
+  NAudio.CoreAudioApi.PropertyKey = 1
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 0
+  NAudio.CoreAudioApi.PropertyKey = 0
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 5
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = {0.0.0.00000000}.{9ac95f39-6450-49ef-a299-f72a1585ee1e}
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = \\?\SWD#MMDEVAPI#{0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}#{e6327cad-dcec-4949-ae8a-991e976a79d2}
+  NAudio.CoreAudioApi.PropertyKey = SWD\MMDEVAPI\{0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+  NAudio.CoreAudioApi.PropertyKey = Наушники (6- HOCO W35 Stereo)
+  NAudio.CoreAudioApi.PropertyKey = 6- HOCO W35 Stereo
+  NAudio.CoreAudioApi.PropertyKey = {BD41E15F-AB0D-45ED-8AAB-0785490B4A41}
+
+
+===== 2026-03-12 20:53:20 =====
+ID: {0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+FriendlyName: Наушники (6- HOCO W35 Stereo)
+State: Active
+Properties:
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = Наушники
+  NAudio.CoreAudioApi.PropertyKey = HOCO W35 Stereo
+  NAudio.CoreAudioApi.PropertyKey = {1}.BTHENUM\{0000110B-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\8&260E7AF3&0&4B548D8827B1_C00000000
+  NAudio.CoreAudioApi.PropertyKey = microsoft_bluetooth_a2dp_src.inf:00a2c5fc7d8ad5f7:BthA2dpSrc:10.0.19041.1:BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}
+  NAudio.CoreAudioApi.PropertyKey = 02.05.2025 16:56:16
+  NAudio.CoreAudioApi.PropertyKey = 67877c8e-2730-544f-9179-f3151394d634
+  NAudio.CoreAudioApi.PropertyKey = {784F6CFB-1505-461F-8503-79E8095F36EA}
+  NAudio.CoreAudioApi.PropertyKey = BTHENUM
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 3
+  NAudio.CoreAudioApi.PropertyKey = {DFF21CE2-F70F-11D0-B917-00A0C9223196}
+  NAudio.CoreAudioApi.PropertyKey = %windir%\system32\mmres.dll,-3051
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = {00000000-0000-0000-0000-000000000000}
+  NAudio.CoreAudioApi.PropertyKey = 1
+  NAudio.CoreAudioApi.PropertyKey = BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 65536
+  NAudio.CoreAudioApi.PropertyKey = {2}.\\?\bthenum#{0000110b-0000-1000-8000-00805f9b34fb}_vid&000105d6_pid&000a#8&260e7af3&0&4b548d8827b1_c00000000#{6994ad04-93ef-11d0-a3cc-00a0c9223196}\src
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = 1610716736
+  NAudio.CoreAudioApi.PropertyKey = 1610708736
+  NAudio.CoreAudioApi.PropertyKey = 1610612768
+  NAudio.CoreAudioApi.PropertyKey = 1610613504
+  NAudio.CoreAudioApi.PropertyKey = 1610691328
+  NAudio.CoreAudioApi.PropertyKey = 1610617600
+  NAudio.CoreAudioApi.PropertyKey = 1610712736
+  NAudio.CoreAudioApi.PropertyKey = 1610716736
+  NAudio.CoreAudioApi.PropertyKey = 405830538916
+  NAudio.CoreAudioApi.PropertyKey = 1
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 0
+  NAudio.CoreAudioApi.PropertyKey = 0
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 5
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = {0.0.0.00000000}.{9ac95f39-6450-49ef-a299-f72a1585ee1e}
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = \\?\SWD#MMDEVAPI#{0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}#{e6327cad-dcec-4949-ae8a-991e976a79d2}
+  NAudio.CoreAudioApi.PropertyKey = SWD\MMDEVAPI\{0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+  NAudio.CoreAudioApi.PropertyKey = Наушники (6- HOCO W35 Stereo)
+  NAudio.CoreAudioApi.PropertyKey = 6- HOCO W35 Stereo
+  NAudio.CoreAudioApi.PropertyKey = {BD41E15F-AB0D-45ED-8AAB-0785490B4A41}
+
+
+===== 2026-03-12 20:53:35 =====
+ID: {0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+FriendlyName: Наушники (6- HOCO W35 Stereo)
+State: Active
+Properties:
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = Наушники
+  NAudio.CoreAudioApi.PropertyKey = HOCO W35 Stereo
+  NAudio.CoreAudioApi.PropertyKey = {1}.BTHENUM\{0000110B-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\8&260E7AF3&0&4B548D8827B1_C00000000
+  NAudio.CoreAudioApi.PropertyKey = microsoft_bluetooth_a2dp_src.inf:00a2c5fc7d8ad5f7:BthA2dpSrc:10.0.19041.1:BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}
+  NAudio.CoreAudioApi.PropertyKey = 02.05.2025 16:56:16
+  NAudio.CoreAudioApi.PropertyKey = 67877c8e-2730-544f-9179-f3151394d634
+  NAudio.CoreAudioApi.PropertyKey = {784F6CFB-1505-461F-8503-79E8095F36EA}
+  NAudio.CoreAudioApi.PropertyKey = BTHENUM
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 3
+  NAudio.CoreAudioApi.PropertyKey = {DFF21CE2-F70F-11D0-B917-00A0C9223196}
+  NAudio.CoreAudioApi.PropertyKey = %windir%\system32\mmres.dll,-3051
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = {00000000-0000-0000-0000-000000000000}
+  NAudio.CoreAudioApi.PropertyKey = 1
+  NAudio.CoreAudioApi.PropertyKey = BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 65536
+  NAudio.CoreAudioApi.PropertyKey = {2}.\\?\bthenum#{0000110b-0000-1000-8000-00805f9b34fb}_vid&000105d6_pid&000a#8&260e7af3&0&4b548d8827b1_c00000000#{6994ad04-93ef-11d0-a3cc-00a0c9223196}\src
+  NAudio.CoreAudioApi.PropertyKey = True
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = 1610716736
+  NAudio.CoreAudioApi.PropertyKey = 1610708736
+  NAudio.CoreAudioApi.PropertyKey = 1610612768
+  NAudio.CoreAudioApi.PropertyKey = 1610613504
+  NAudio.CoreAudioApi.PropertyKey = 1610691328
+  NAudio.CoreAudioApi.PropertyKey = 1610617600
+  NAudio.CoreAudioApi.PropertyKey = 1610712736
+  NAudio.CoreAudioApi.PropertyKey = 1610716736
+  NAudio.CoreAudioApi.PropertyKey = 405830538916
+  NAudio.CoreAudioApi.PropertyKey = 1
+  NAudio.CoreAudioApi.PropertyKey = False
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 0
+  NAudio.CoreAudioApi.PropertyKey = 0
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = 5
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = {0.0.0.00000000}.{9ac95f39-6450-49ef-a299-f72a1585ee1e}
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = System.Byte[]
+  NAudio.CoreAudioApi.PropertyKey = \\?\SWD#MMDEVAPI#{0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}#{e6327cad-dcec-4949-ae8a-991e976a79d2}
+  NAudio.CoreAudioApi.PropertyKey = SWD\MMDEVAPI\{0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+  NAudio.CoreAudioApi.PropertyKey = Наушники (6- HOCO W35 Stereo)
+  NAudio.CoreAudioApi.PropertyKey = 6- HOCO W35 Stereo
+  NAudio.CoreAudioApi.PropertyKey = {BD41E15F-AB0D-45ED-8AAB-0785490B4A41}
+
+
+===== 2026-03-12 20:54:38 =====
+ID: {0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+FriendlyName: Наушники (6- HOCO W35 Stereo)
+State: Active
+BthEnumValue: {1}.BTHENUM\{0000110B-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\8&260E7AF3&0&4B548D8827B1_C00000000
+BtAddress: 4B548D8827B1
+
+
+===== 2026-03-12 20:54:46 =====
+ID: {0.0.0.00000000}.{bd41e15f-ab0d-45ed-8aab-0785490b4a41}
+FriendlyName: Наушники (6- HOCO W35 Stereo)
+State: Active
+BthEnumValue: {1}.BTHENUM\{0000110B-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\8&260E7AF3&0&4B548D8827B1_C00000000
+BtAddress: 4B548D8827B1
+
+
+===== 2026-03-12 20:59:38 =====
+BtAddress: 4B548D8827B1
+PnpFriendlyName: HOCO W35
+PnpInstanceId: BTHENUM\DEV_4B548D8827B1\8&260E7AF3&0&BLUETOOTHDEVICE_4B548D8827B1
+
+===== 2026-03-12 20:59:53 =====
+BtAddress: 4B548D8827B1
+PnpFriendlyName: HOCO W35
+PnpInstanceId: BTHENUM\DEV_4B548D8827B1\8&260E7AF3&0&BLUETOOTHDEVICE_4B548D8827B1
+
+===== 2026-03-12 21:00:08 =====
+BtAddress: 4B548D8827B1
+PnpFriendlyName: HOCO W35
+PnpInstanceId: BTHENUM\DEV_4B548D8827B1\8&260E7AF3&0&BLUETOOTHDEVICE_4B548D8827B1
+
+===== 2026-03-12 21:00:13 =====
+BtAddress: 4B548D8827B1
+PnpFriendlyName: HOCO W35
+PnpInstanceId: BTHENUM\DEV_4B548D8827B1\8&260E7AF3&0&BLUETOOTHDEVICE_4B548D8827B1
+
+===== 2026-03-12 21:07:17 =====
+BtAddress: 4B548D8827B1
+PnpFriendlyName: HOCO W35
+PnpInstanceId: BTHENUM\DEV_4B548D8827B1\8&260E7AF3&0&BLUETOOTHDEVICE_4B548D8827B1
+ContainerId: {67877C8E-2730-544F-9179-F3151394D634}
+
+===== 2026-03-12 21:08:24 =====
+BtAddress: 4B548D8827B1
+PnpFriendlyName: HOCO W35
+PnpInstanceId: BTHENUM\DEV_4B548D8827B1\8&260E7AF3&0&BLUETOOTHDEVICE_4B548D8827B1
+ContainerId: {67877C8E-2730-544F-9179-F3151394D634}
+
+===== 2026-03-12 21:09:24 =====
+BtAddress: 4B548D8827B1
+PnpFriendlyName: HOCO W35
+PnpInstanceId: BTHENUM\DEV_4B548D8827B1\8&260E7AF3&0&BLUETOOTHDEVICE_4B548D8827B1
+ContainerId: {67877C8E-2730-544F-9179-F3151394D634}
+
+===== 2026-03-12 21:10:12 =====
+BtAddress: 4B548D8827B1
+PnpFriendlyName: HOCO W35
+PnpInstanceId: BTHENUM\DEV_4B548D8827B1\8&260E7AF3&0&BLUETOOTHDEVICE_4B548D8827B1
+
+===== 2026-03-12 21:10:16 =====
+BtAddress: 4B548D8827B1
+PnpFriendlyName: HOCO W35
+PnpInstanceId: BTHENUM\DEV_4B548D8827B1\8&260E7AF3&0&BLUETOOTHDEVICE_4B548D8827B1
+
