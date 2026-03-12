@@ -11,15 +11,38 @@ public sealed class TrayApplicationContext : ApplicationContext
 {
     private readonly NotifyIcon _notifyIcon;
     private readonly System.Windows.Forms.Timer _timer;
+    private readonly AppSettings _settings;
 
     private string _deviceName = "Наушники";
-    private int? _batteryPercent = 72;
+    private int? _batteryPercent = null;
 
     public TrayApplicationContext()
     {
+        _settings = AppSettings.Load();
+    
         var menu = new ContextMenuStrip();
+
+        var refreshMenu = new ToolStripMenuItem("Частота обновления");
+        AddRefreshMenuItem(refreshMenu, "30 сек", 30);
+        AddRefreshMenuItem(refreshMenu, "1 мин", 60);
+        AddRefreshMenuItem(refreshMenu, "5 мин", 300);
+        AddRefreshMenuItem(refreshMenu, "15 мин", 900);
+        AddRefreshMenuItem(refreshMenu, "30 мин", 1800);
+        AddRefreshMenuItem(refreshMenu, "1 час", 3600);
+        menu.Items.Add(refreshMenu);
+
         menu.Items.Add("Обновить", null, async (_, _) => await RefreshAsync());
-        menu.Items.Add("Автозапуск: вкл/выкл", null, (_, _) => ToggleAutostart());
+        
+        var autostartItem = new ToolStripMenuItem();
+        autostartItem.Click += (_, _) =>
+        {
+            ToggleAutostart();
+            autostartItem.Text = GetAutostartMenuText();
+        };
+
+        autostartItem.Text = GetAutostartMenuText();
+        menu.Items.Add(autostartItem);
+
         menu.Items.Add(new ToolStripSeparator());
         menu.Items.Add("Выход", null, (_, _) => ExitApplication());
 
@@ -35,12 +58,26 @@ public sealed class TrayApplicationContext : ApplicationContext
 
         _timer = new System.Windows.Forms.Timer
         {
-            Interval = 15000
+            Interval = _settings.RefreshSeconds * 1000
         };
         _timer.Tick += async (_, _) => await RefreshAsync();
         _timer.Start();
 
         _ = RefreshAsync();
+    }
+
+    private static string GetAutostartMenuText()
+    {
+        const string runKey = @"Software\Microsoft\Windows\CurrentVersion\Run";
+        const string appName = "BtHeadphonesBattery";
+
+        using var key = Registry.CurrentUser.OpenSubKey(runKey, writable: false);
+
+        var current = key?.GetValue(appName)?.ToString();
+
+        return string.IsNullOrWhiteSpace(current)
+            ? "Включить автозапуск"
+            : "Выключить автозапуск";
     }
 
     private Task RefreshAsync()
@@ -53,47 +90,65 @@ public sealed class TrayApplicationContext : ApplicationContext
             {
                 _deviceName = "Нет BT";
                 _batteryPercent = null;
-                _notifyIcon.Text = TrimTooltip("У активного аудиоустройства не найден Bluetooth-адрес");
-                _notifyIcon.Icon = CreateTextIcon("??");
-
+                UpdateTray();
                 return Task.CompletedTask;
             }
 
             var pnp = PnpBluetoothDeviceFinder.FindByBluetoothAddress(btAddress);
 
-            string logPath = Path.Combine(AppContext.BaseDirectory, "audio-log.txt");
-            File.AppendAllText(
-                logPath,
-                $"===== {DateTime.Now:yyyy-MM-dd HH:mm:ss} ====={Environment.NewLine}" +
-                $"BtAddress: {btAddress}{Environment.NewLine}" +
-                $"PnpFriendlyName: {pnp?.FriendlyName ?? "<not found>"}{Environment.NewLine}" +
-                $"PnpInstanceId: {pnp?.InstanceId ?? "<not found>"}{Environment.NewLine}{Environment.NewLine}"
-            );
+            var batteryInfo = pnp?.InstanceId is not null
+                ? PnpBatteryReader.ReadByRootInstanceId(pnp.InstanceId)
+                : null;
 
-            _deviceName = pnp?.FriendlyName ?? "BT device";
-            _batteryPercent = null;
-            _notifyIcon.Text = TrimTooltip(
-                pnp is null
-                    ? $"BT адрес {btAddress}, PnP-устройство не найдено"
-                    : $"{pnp.FriendlyName}"
-            );
-            _notifyIcon.Icon = CreateTextIcon("BT");
+            _deviceName = batteryInfo?.FriendlyName
+                ?? pnp?.FriendlyName
+                ?? "BT device";
+
+            _batteryPercent = batteryInfo?.BatteryPercent;
+            
+            UpdateTray();
         }
         catch (Exception ex)
         {
-            File.AppendAllText(
-                Path.Combine(AppContext.BaseDirectory, "audio-log.txt"),
-                $"===== {DateTime.Now:yyyy-MM-dd HH:mm:ss} ====={Environment.NewLine}" +
-                $"ERROR: {ex}{Environment.NewLine}{Environment.NewLine}"
-            );
-
             _deviceName = "Ошибка";
             _batteryPercent = null;
             _notifyIcon.Text = TrimTooltip($"Ошибка: {ex.Message}");
+
+            var oldIcon = _notifyIcon.Icon;
             _notifyIcon.Icon = CreateTextIcon("!");
+            oldIcon?.Dispose();
         }
 
         return Task.CompletedTask;
+    }
+
+    private void AddRefreshMenuItem(ToolStripMenuItem parent, string text, int seconds)
+    {
+        var item = new ToolStripMenuItem(text)
+        {
+            Checked = _settings.RefreshSeconds == seconds
+        };
+
+        item.Click += (_, _) =>
+        {
+            _settings.RefreshSeconds = seconds;
+            _settings.Save();
+            _timer.Interval = seconds * 1000;
+
+            foreach (ToolStripMenuItem sibling in parent.DropDownItems)
+                sibling.Checked = false;
+
+            item.Checked = true;
+
+            _notifyIcon.ShowBalloonTip(
+                1500,
+                "Частота обновления",
+                $"Теперь обновление каждые {text}",
+                ToolTipIcon.Info
+            );
+        };
+
+        parent.DropDownItems.Add(item);
     }
 
     private void UpdateTray()
@@ -102,7 +157,10 @@ public sealed class TrayApplicationContext : ApplicationContext
             ? (p >= 100 ? "100" : p.ToString())
             : "??";
 
+        var oldIcon = _notifyIcon.Icon;
         _notifyIcon.Icon = CreateTextIcon(textForIcon);
+        oldIcon?.Dispose();
+
         _notifyIcon.Text = TrimTooltip(
             _batteryPercent is int battery
                 ? $"{_deviceName}: {battery}%"
@@ -141,6 +199,11 @@ public sealed class TrayApplicationContext : ApplicationContext
     private void ExitApplication()
     {
         _timer.Stop();
+
+        var oldIcon = _notifyIcon.Icon;
+        _notifyIcon.Icon = null;
+        oldIcon?.Dispose();
+
         _notifyIcon.Visible = false;
         _notifyIcon.Dispose();
         ExitThread();
@@ -153,18 +216,23 @@ public sealed class TrayApplicationContext : ApplicationContext
         using var bmp = new Bitmap(size, size, PixelFormat.Format32bppArgb);
         using var g = Graphics.FromImage(bmp);
 
-        g.SmoothingMode = SmoothingMode.AntiAlias;
+        g.SmoothingMode = SmoothingMode.None;
+        g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
         g.Clear(Color.Transparent);
 
-        using var bgBrush = new SolidBrush(Color.FromArgb(35, 35, 35));
-        using var borderPen = new Pen(Color.FromArgb(90, 90, 90));
         using var textBrush = new SolidBrush(Color.White);
 
-        g.FillRoundedRectangle(bgBrush, new Rectangle(0, 0, 16, 16), 4);
-        g.DrawRoundedRectangle(borderPen, new Rectangle(0, 0, 15, 15), 4);
+        float fontSize =
+            text.Length switch
+            {
+                1 => 12f,
+                2 => 10f,
+                _ => 7f
+            };
 
-        using var font = new Font("Segoe UI", text.Length >= 3 ? 6.0f : 7.5f, FontStyle.Bold, GraphicsUnit.Pixel);
-        var rect = new RectangleF(0, 0, 16, 16);
+        using var font = new Font("Segoe UI", fontSize, FontStyle.Bold, GraphicsUnit.Pixel);
+
+        var rect = new RectangleF(0, -1, 16, 16);
         var sf = new StringFormat
         {
             Alignment = StringAlignment.Center,
@@ -187,33 +255,4 @@ public sealed class TrayApplicationContext : ApplicationContext
 
     [DllImport("user32.dll", CharSet = CharSet.Auto)]
     private static extern bool DestroyIcon(IntPtr handle);
-}
-
-internal static class GraphicsExtensions
-{
-    public static void FillRoundedRectangle(this Graphics g, Brush brush, Rectangle bounds, int radius)
-    {
-        using var path = RoundedRect(bounds, radius);
-        g.FillPath(brush, path);
-    }
-
-    public static void DrawRoundedRectangle(this Graphics g, Pen pen, Rectangle bounds, int radius)
-    {
-        using var path = RoundedRect(bounds, radius);
-        g.DrawPath(pen, path);
-    }
-
-    private static GraphicsPath RoundedRect(Rectangle bounds, int radius)
-    {
-        int d = radius * 2;
-        var path = new GraphicsPath();
-
-        path.AddArc(bounds.X, bounds.Y, d, d, 180, 90);
-        path.AddArc(bounds.Right - d, bounds.Y, d, d, 270, 90);
-        path.AddArc(bounds.Right - d, bounds.Bottom - d, d, d, 0, 90);
-        path.AddArc(bounds.X, bounds.Bottom - d, d, d, 90, 90);
-        path.CloseFigure();
-
-        return path;
-    }
 }
